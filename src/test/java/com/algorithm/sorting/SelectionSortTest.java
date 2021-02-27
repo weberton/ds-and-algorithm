@@ -12,9 +12,10 @@ public class SelectionSortTest {
 
     @Test
     public void selectionSort() {
-        int[] selectionSort = SelectionSort.selectionSort(new int[]{5, 2, 4, 6, 1, 3});
+        int[] array = new int[]{5, 2, 4, 6, 1, 3};
+        SelectionSort.selectionSort(array);
 
-        assertArrayEquals(String.format("Output should be [1,2,3,4,5,6]"), new int[]{1,2,3,4,5,6}, selectionSort);
+        assertArrayEquals(String.format("Output should be [1,2,3,4,5,6]"), new int[]{1,2,3,4,5,6}, array);
     }
 
     @Test
@@ -22,7 +23,8 @@ public class SelectionSortTest {
 
         for (int i = 0; i < 5; i++){
             int [] array = generateArray(10);
-            System.out.println(Arrays.toString(SelectionSort.selectionSort(array)));
+            SelectionSort.selectionSort(array);
+            System.out.println(Arrays.toString(array));
         }
     }
 
