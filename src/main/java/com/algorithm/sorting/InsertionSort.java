@@ -2,7 +2,7 @@ package com.algorithm.sorting;
 
 public class InsertionSort {
 
-    public static int[] insertionSort(int[] array){
+    public static void insertionSort(int[] array){
         for(int j = 1; j < array.length; j++){
             int key = array[j];
 
@@ -13,7 +13,5 @@ public class InsertionSort {
             }
             array[i + 1] = key;
         }
-
-        return array;
     }
 }
