@@ -2,7 +2,7 @@ package com.algorithm.sorting;
 
 public class SelectionSort {
 
-    public static int[] selectionSort(int[] array){
+    public static void selectionSort(int[] array){
         for (int i = 0; i < array.length - 1; i++)
         {
             int index = i;
@@ -15,7 +15,6 @@ public class SelectionSort {
             array[index] = array[i];
             array[i] = smallerNumber;
         }
-        return array;
     }
 
 }
