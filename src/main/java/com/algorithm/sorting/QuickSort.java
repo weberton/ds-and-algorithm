@@ -1,5 +1,10 @@
 package com.algorithm.sorting;
 
+/**
+ * Complexity: O(nlogn) - Average
+ *             O(nˆ2) - worst case
+ * Time: O(1)
+ */
 public class QuickSort {
 
     public static void quickSort(int[] array) {
