@@ -15,7 +15,13 @@ public class QuickSort {
     }
 
     private static int partition(int[] array, int start, int end) {
-        int pivot = array[end];
+        //average 3 elements = start=0, mid=4, end=9
+        // < maxelement in the array
+        // maxelement = 9
+//        int pivot = array[end];
+        int pivot = (start + end)/2;
+        swap(array, pivot, end);
+        pivot = array[end];
         int pIndex = start;
         for(int i= start; i <= end -1; i ++){
             if(array[i] <= pivot){
