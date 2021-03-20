@@ -23,7 +23,7 @@ public class HeapSort {
 
     // To heapify a subtree rooted with node i which is
     // an index in arr[]. n is size of heap
-    static void heapifyMax(int arr[], int n, int i) {
+    public static void heapifyMax(int arr[], int n, int i) {
         int largest = i; // Initialize largest as root
         int l = 2 * i + 1; // left = 2*i + 1
         int r = 2 * i + 2; // right = 2*i + 2
@@ -68,7 +68,7 @@ public class HeapSort {
 
     // To heapify a subtree rooted with node i which is
     // an index in arr[]. n is size of heap
-    static void heapifyMin(int arr[], int n, int i) {
+    public static void heapifyMin(int arr[], int n, int i) {
         int lowest = i; // Initialize lowest as root
         int l = 2 * i + 1; // left = 2*i + 1
         int r = 2 * i + 2; // right = 2*i + 2
